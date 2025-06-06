@@ -1,125 +1,86 @@
 {
+  "$schema": "https://mintlify.com/docs.json",
   "name": "Kernel MKII User Guide",
-  "description": "Complete user documentation for the Kernel MKII content intelligence platform",
-  "version": "1.0.0",
+  "theme": "mint",
+  "colors": {
+    "primary": "#1890ff",
+    "light": "#40a9ff",
+    "dark": "#096dd9"
+  },
+  "logo": {
+    "light": "/logo/logo.svg",
+    "dark": "/logo/logo.svg"
+  },
+  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "title": "Getting Started",
+        "tab": "Getting Started",
         "groups": [
           {
-            "title": "Welcome",
+            "group": "Welcome",
             "pages": [
               "index",
               "getting-started"
             ]
           },
           {
-            "title": "User Guide",
+            "group": "User Guide",
             "pages": [
               "user-guide/dashboard",
               "user-guide/navigation",
-              "user-guide/basic-tasks",
-              "user-guide/settings"
+              "user-guide/basic-tasks"
             ]
           }
         ]
       },
       {
-        "title": "Features",
+        "tab": "Features",
         "groups": [
           {
-            "title": "Core Features",
+            "group": "Core Features",
             "pages": [
               "features/asset-management",
-              "features/content-upload",
-              "features/ai-content-analysis",
-              "features/taxonomy-tagging",
-              "features/search-and-discovery"
-            ]
-          },
-          {
-            "title": "Intelligence Features",
-            "pages": [
-              "features/testimonial-extraction",
-              "features/data-point-extraction",
-              "features/content-insights",
-              "features/team-collaboration"
-            ]
-          },
-          {
-            "title": "Advanced",
-            "pages": [
-              "features/url-scraping",
-              "features/bulk-operations",
-              "features/saved-views",
-              "features/integrations"
+              "features/search-and-discovery",
+              "features/testimonial-extraction"
             ]
           }
         ]
       },
       {
-        "title": "Tutorials",
+        "tab": "Tutorials",
         "groups": [
           {
-            "title": "Step-by-Step Guides",
+            "group": "Step-by-Step Guides",
             "pages": [
-              "tutorials/quick-start-tutorial",
-              "tutorials/organizing-content",
-              "tutorials/extracting-insights",
-              "tutorials/team-workflows",
-              "tutorials/best-practices"
+              "tutorials/quick-start-tutorial"
             ]
           }
         ]
       },
       {
-        "title": "Account & Support",
+        "tab": "Account & Support",
         "groups": [
           {
-            "title": "Account Management",
+            "group": "Account Management",
             "pages": [
-              "account/profile-settings",
-              "account/workspace-management",
-              "account/team-management",
-              "account/user-roles"
+              "account/team-management"
             ]
           },
           {
-            "title": "Help & Support",
+            "group": "Help & Support",
             "pages": [
               "troubleshooting/common-issues",
               "troubleshooting/upload-problems",
-              "troubleshooting/search-issues", 
               "troubleshooting/contact-support",
-              "faqs/general",
-              "faqs/features",
-              "faqs/technical"
+              "faqs/general"
             ]
           }
         ]
       }
     ]
   },
-  "theme": {
-    "primaryColor": "#1890ff",
-    "logo": "/logo/logo.svg",
-    "favicon": "/favicon.svg"
-  },
-  "search": {
-    "enabled": true,
-    "placeholder": "Search documentation..."
-  },
   "footer": {
-    "links": [
-      {
-        "title": "Support",
-        "url": "/troubleshooting/contact-support"
-      },
-      {
-        "title": "Feature Requests",
-        "url": "mailto:support@kernelmkii.com"
-      }
-    ]
+    "socials": {}
   }
 } 
