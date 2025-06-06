@@ -1,0 +1,401 @@
+# Common Issues & Solutions
+
+This guide covers the most frequent issues users encounter with Kernel MKII and provides step-by-step solutions to resolve them quickly.
+
+## Upload & Processing Issues
+
+### Content Won't Upload
+
+**Problem**: Files fail to upload or get stuck in the upload process.
+
+**Solutions**:
+
+1. **Check File Size**
+   - Maximum file size: 50MB per file
+   - For larger files, try compressing or splitting them
+   - Consider using URL import for web content instead
+
+2. **Verify File Format**
+   - Supported formats: PDF, DOC, DOCX, PPT, PPTX, XLS, XLSX, TXT, CSV, JPG, PNG, GIF, SVG
+   - Unsupported formats will be rejected
+   - Convert files to supported formats if needed
+
+3. **Browser Issues**
+   - Clear browser cache and cookies
+   - Try a different browser (Chrome, Firefox, Safari, Edge)
+   - Disable browser extensions temporarily
+   - Check if JavaScript is enabled
+
+4. **Network Connection**
+   - Ensure stable internet connection
+   - Try uploading smaller batches of files
+   - Wait for network congestion to resolve
+
+![Upload Troubleshooting](/images/troubleshoot-upload.png)
+
+### Content Stuck in Processing
+
+**Problem**: Content shows "Processing" status for extended periods.
+
+**Solutions**:
+
+1. **Wait for Processing**
+   - Text extraction: 1-5 minutes for most files
+   - Large files (>10MB): Up to 15 minutes
+   - Complex documents: May take longer
+
+2. **Check Processing Status**
+   - Refresh the page to see current status
+   - Processing stages: Upload → Text Extracted → Vector Created → Ready
+   - Each stage may take several minutes
+
+3. **Retry Processing**
+   - If stuck over 30 minutes, try re-uploading
+   - Contact support for files stuck over 1 hour
+   - Consider file corruption issues
+
+4. **File-Specific Issues**
+   - Scanned PDFs take longer due to OCR processing
+   - Password-protected files cannot be processed
+   - Corrupted files will fail processing
+
+### AI Suggestions Not Working
+
+**Problem**: AI suggestions aren't appearing or are inaccurate.
+
+**Solutions**:
+
+1. **Ensure Processing is Complete**
+   - AI suggestions only work after content reaches "Ready" status
+   - Wait for full processing to complete
+   - Refresh the page to see latest suggestions
+
+2. **Content Requirements**
+   - AI needs readable text content to generate suggestions
+   - Images without text won't generate suggestions
+   - Very short content may not have enough context
+
+3. **Manual AI Suggestions**
+   - Click "AI Suggest" buttons manually
+   - Try clicking multiple times if first attempt fails
+   - Suggestions improve with more content in your workspace
+
+4. **Content Type Issues**
+   - Some content types generate better suggestions than others
+   - Marketing content typically gets better suggestions than technical documents
+   - Provide more context in content titles and descriptions
+
+## Search & Discovery Issues
+
+### Can't Find Uploaded Content
+
+**Problem**: Content doesn't appear in search results or asset lists.
+
+**Solutions**:
+
+1. **Check Filters**
+   - Clear all filters on the Assets page
+   - Remove date range filters that might exclude your content
+   - Check team filters if using team assignments
+
+2. **Verify Search Terms**
+   - Try searching by exact filename
+   - Search by content type or tags you applied
+   - Use partial words if full terms don't work
+
+3. **Processing Status**
+   - Content must finish processing to be fully searchable
+   - Check that status shows "Ready"
+   - Text content only becomes searchable after text extraction
+
+4. **Workspace Issues**
+   - Verify you're in the correct workspace
+   - Check if content was uploaded to a different workspace
+   - Ensure you have access permissions to view the content
+
+![Search Troubleshooting](/images/troubleshoot-search.png)
+
+### Search Results Incomplete
+
+**Problem**: Search returns partial or unexpected results.
+
+**Solutions**:
+
+1. **Search Syntax**
+   - Use quotes for exact phrases: "customer success"
+   - Try broader search terms
+   - Remove special characters that might interfere
+
+2. **Content Indexing**
+   - Recently uploaded content may take time to fully index
+   - Wait 5-10 minutes after processing completes
+   - Try refreshing the search page
+
+3. **Filter Conflicts**
+   - Active filters may be limiting search results
+   - Clear filters and search again
+   - Check that filter combinations make sense
+
+4. **Text Extraction Issues**
+   - Some files may have poor text extraction
+   - Check the content tab in asset details
+   - Consider re-uploading problematic files
+
+## Team & Collaboration Issues
+
+### Team Features Not Working
+
+**Problem**: Can't create teams or assign content to teams.
+
+**Solutions**:
+
+1. **Permission Issues**
+   - Only workspace admins can create teams
+   - Check your user role in Settings
+   - Contact workspace admin for team creation
+
+2. **Team Creation Problems**
+   - Use descriptive, unique team names
+   - Avoid special characters in team names
+   - Ensure team description is provided
+
+3. **Team Assignment Issues**
+   - Teams must exist before assignment
+   - Refresh the page to see newly created teams
+   - Check that team assignment was saved properly
+
+4. **Member Management**
+   - Users must be workspace members before team assignment
+   - Invite users to workspace first, then add to teams
+   - Verify email addresses are correct in invitations
+
+### User Invitation Problems
+
+**Problem**: Team members can't join or invitations aren't received.
+
+**Solutions**:
+
+1. **Email Issues**
+   - Check spam/junk folders for invitation emails
+   - Verify email addresses are typed correctly
+   - Try sending invitations again
+
+2. **Permission Problems**
+   - Only workspace admins can invite users
+   - Check your permission level
+   - Contact workspace admin for invitations
+
+3. **Account Issues**
+   - Users may already have accounts with different emails
+   - Check if user is already in the workspace
+   - Try using the exact email address from their existing account
+
+4. **Technical Issues**
+   - Wait a few minutes for email delivery
+   - Check email server issues on your domain
+   - Contact support if invitations consistently fail
+
+## Interface & Performance Issues
+
+### Slow Loading Performance
+
+**Problem**: Pages load slowly or interface feels sluggish.
+
+**Solutions**:
+
+1. **Browser Optimization**
+   - Close unnecessary browser tabs
+   - Clear browser cache and data
+   - Update to latest browser version
+   - Try incognito/private browsing mode
+
+2. **Network Issues**
+   - Check internet connection speed
+   - Try different network (mobile hotspot, different WiFi)
+   - Pause large downloads or uploads
+
+3. **Content Volume**
+   - Large content libraries may load slower
+   - Use filters to reduce data load
+   - Consider archiving old content
+
+4. **Device Performance**
+   - Close other applications
+   - Restart browser or device
+   - Check available RAM and storage
+
+### Interface Not Displaying Correctly
+
+**Problem**: Buttons missing, layout broken, or features not working.
+
+**Solutions**:
+
+1. **Browser Compatibility**
+   - Use supported browsers: Chrome, Firefox, Safari, Edge
+   - Update browser to latest version
+   - Enable JavaScript in browser settings
+
+2. **Cache Issues**
+   - Clear browser cache and cookies
+   - Force refresh page (Ctrl+F5 or Cmd+Shift+R)
+   - Try hard refresh multiple times
+
+3. **Extension Conflicts**
+   - Disable ad blockers temporarily
+   - Turn off other browser extensions
+   - Try incognito/private browsing mode
+
+4. **Screen Resolution**
+   - Minimum resolution: 1024x768
+   - Try zooming out if interface appears cut off
+   - Use horizontal scrolling if necessary
+
+![Interface Troubleshooting](/images/troubleshoot-interface.png)
+
+## Data & Content Issues
+
+### Missing Testimonials or Data Points
+
+**Problem**: Expected insights aren't extracted from content.
+
+**Solutions**:
+
+1. **Content Format**
+   - Ensure testimonials are clearly quoted
+   - Include attribution information (names, companies)
+   - Check that text extraction worked properly
+
+2. **AI Recognition**
+   - Some content formats work better than others
+   - Try reformatting testimonials with clear quotes
+   - Add context around testimonials in content
+
+3. **Manual Addition**
+   - Add missed testimonials manually
+   - Use the "Create Testimonial" or "Create Data Point" features
+   - Link manually created items to source assets
+
+4. **Processing Issues**
+   - Ensure content fully processed to "Ready" status
+   - Re-upload content if processing failed
+   - Check content quality and readability
+
+### Incorrect Tag Suggestions
+
+**Problem**: AI suggests wrong tags or classifications.
+
+**Solutions**:
+
+1. **Content Context**
+   - AI suggestions improve with more context
+   - Add descriptive titles and content descriptions
+   - Include relevant keywords in content
+
+2. **Training the System**
+   - Consistently correct wrong suggestions
+   - The AI learns from your corrections over time
+   - Be consistent with terminology and classifications
+
+3. **Manual Tagging**
+   - Override AI suggestions with correct tags
+   - Create custom fields for organization-specific needs
+   - Document tagging guidelines for team consistency
+
+4. **Content Quality**
+   - Ensure content has sufficient text for analysis
+   - Clear, well-structured content gets better suggestions
+   - Consider content type and purpose in context
+
+## Account & Access Issues
+
+### Login Problems
+
+**Problem**: Can't log in or access account.
+
+**Solutions**:
+
+1. **Password Issues**
+   - Use "Forgot Password" link to reset
+   - Check caps lock and typing accuracy
+   - Try typing password in text editor first
+
+2. **Account Status**
+   - Verify email address is correct
+   - Check if account needs email verification
+   - Contact support if account is suspended
+
+3. **Browser Issues**
+   - Clear cookies and cache
+   - Try different browser
+   - Disable browser extensions
+
+4. **Two-Factor Authentication**
+   - Ensure mobile device time is correct
+   - Try generating new backup codes
+   - Contact support if 2FA device is lost
+
+### Permission Denied Errors
+
+**Problem**: Can't access certain features or content.
+
+**Solutions**:
+
+1. **Role Permissions**
+   - Check your user role in workspace
+   - Contact workspace admin for permission upgrades
+   - Understand role limitations (consumer, member, admin, owner)
+
+2. **Team Access**
+   - Ensure you're assigned to relevant teams
+   - Check team-specific content restrictions
+   - Request team membership from team leaders
+
+3. **Workspace Access**
+   - Verify you're in the correct workspace
+   - Switch workspaces if you belong to multiple
+   - Request access to additional workspaces if needed
+
+4. **Feature Availability**
+   - Some features may be plan-specific
+   - Check workspace subscription level
+   - Contact billing administrator for upgrades
+
+## Getting Additional Help
+
+### When to Contact Support
+
+Contact support if you experience:
+- Issues persisting after trying these solutions
+- Data loss or corruption
+- Account access problems
+- Billing or subscription issues
+- Feature requests or feedback
+
+### Information to Include
+
+When contacting support, provide:
+- **Error Messages**: Exact text of any error messages
+- **Steps to Reproduce**: What you were doing when the issue occurred
+- **Browser Information**: Browser type and version
+- **Screenshots**: Visual evidence of the problem
+- **Workspace Details**: Workspace name and your role
+- **Timing**: When the issue first occurred
+
+### Emergency Situations
+
+For urgent issues:
+- Data loss or corruption
+- Security concerns
+- Critical business impact
+- System-wide outages
+
+Use the priority support channel and mark your request as urgent.
+
+---
+
+**Still Having Issues?**
+
+- 📧 **[Contact Support](/troubleshooting/contact-support)** - Get personalized help
+- ❓ **[Check FAQs](/faqs/general)** - Quick answers to common questions
+- 📚 **[Browse Documentation](/user-guide/dashboard)** - Detailed feature guides
+- 💬 **Community Forum** - Get help from other users 

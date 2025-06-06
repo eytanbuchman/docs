@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 256 256"
+  width="256"
+  height="256"
+>
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="kernelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB55A"/>  <!-- light orange -->
+      <stop offset="100%" stop-color="#FF6A00"/> <!-- deep orange -->
+    </linearGradient>
+
+    <!-- Mask that knocks the “K” out of the hex so the bg shows through -->
+    <mask id="cutOutK" maskUnits="userSpaceOnUse">
+      <!-- Everything starts filled (white)… -->
+      <rect width="256" height="256" fill="white" />
+      <!-- …then we paint the K shape in black to punch it out -->
+      <!-- vertical bar -->
+      <rect x="90" y="48" width="32" height="160" rx="4" fill="black" />
+      <!-- diagonal arm -->
+      <polygon
+        points="140,128 198,64 222,64 164,128 222,192 198,192"
+        fill="black"
+      />
+    </mask>
+  </defs>
+
+  <!-- Hexagon with rounded-ish corners (r=6) -->
+  <path
+    d="
+      M128 16
+      L218 70
+      A6 6 0 0 1 218 186
+      L128 240
+      L38 186
+      A6 6 0 0 1 38 70
+      Z"
+    fill="url(#kernelGrad)"
+    mask="url(#cutOutK)"
+  />
+
+  <!-- Optional soft-glow; comment out if you prefer flat -->
+  <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="#FF9A2E" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#FF9A2E" stop-opacity="0"/>
+  </radialGradient>
+  <circle cx="128" cy="128" r="110" fill="url(#glow)" pointer-events="none"/>
+</svg>

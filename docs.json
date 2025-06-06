@@ -1,102 +1,125 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
+  "name": "Kernel MKII User Guide",
+  "description": "Complete user documentation for the Kernel MKII content intelligence platform",
+  "version": "1.0.0",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "title": "Getting Started",
         "groups": [
           {
-            "group": "Get Started",
+            "title": "Welcome",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started"
             ]
           },
           {
-            "group": "Essentials",
+            "title": "User Guide",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "user-guide/dashboard",
+              "user-guide/navigation",
+              "user-guide/basic-tasks",
+              "user-guide/settings"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "title": "Features",
         "groups": [
           {
-            "group": "API Documentation",
+            "title": "Core Features",
             "pages": [
-              "api-reference/introduction"
+              "features/asset-management",
+              "features/content-upload",
+              "features/ai-content-analysis",
+              "features/taxonomy-tagging",
+              "features/search-and-discovery"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "title": "Intelligence Features",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "features/testimonial-extraction",
+              "features/data-point-extraction",
+              "features/content-insights",
+              "features/team-collaboration"
+            ]
+          },
+          {
+            "title": "Advanced",
+            "pages": [
+              "features/url-scraping",
+              "features/bulk-operations",
+              "features/saved-views",
+              "features/integrations"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tutorials",
+        "groups": [
+          {
+            "title": "Step-by-Step Guides",
+            "pages": [
+              "tutorials/quick-start-tutorial",
+              "tutorials/organizing-content",
+              "tutorials/extracting-insights",
+              "tutorials/team-workflows",
+              "tutorials/best-practices"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Account & Support",
+        "groups": [
+          {
+            "title": "Account Management",
+            "pages": [
+              "account/profile-settings",
+              "account/workspace-management",
+              "account/team-management",
+              "account/user-roles"
+            ]
+          },
+          {
+            "title": "Help & Support",
+            "pages": [
+              "troubleshooting/common-issues",
+              "troubleshooting/upload-problems",
+              "troubleshooting/search-issues", 
+              "troubleshooting/contact-support",
+              "faqs/general",
+              "faqs/features",
+              "faqs/technical"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+  "theme": {
+    "primaryColor": "#1890ff",
+    "logo": "/logo/logo.svg",
+    "favicon": "/favicon.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+  "search": {
+    "enabled": true,
+    "placeholder": "Search documentation..."
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "links": [
+      {
+        "title": "Support",
+        "url": "/troubleshooting/contact-support"
+      },
+      {
+        "title": "Feature Requests",
+        "url": "mailto:support@kernelmkii.com"
+      }
+    ]
   }
-}
+} 
